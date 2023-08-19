@@ -21,7 +21,7 @@
                 <div class="mr-8 ">
                     <div class="text-right mt-2">
                         <span class="">Income:</span>
-                        <input type="text" class="w-6/12">
+                        <input id="total-income" type="text" class="w-6/12">
                     </div>
                     <h4 class="my-3 font-semibold">Expenses</h4>
                     <div class="text-right mt-4">
@@ -38,19 +38,20 @@
                     </div>
                 </div>
                 <div class="text-center font-semibold">
-                    <button class="btn bg-blue-400 hover:bg-orange-300   mt-5">Calculate</button>
-                    <h4 class="my-3 ">Total Expenses: 00</h4>
-                    <h4 class="">Balance: 00</h4>
+                    <button id="money-button" onclick="moneyButton(this)" class="btn bg-blue-400 hover:bg-orange-300   mt-5">Calculate</button>
+                    <h4 class="my-3 " >Total Expenses: <span id="total-expenses">00</span></h4>
+                    <h4 class="" >Balance: <span id="balance">00</span></h4>
                     <div class="mt-3 font-normal">
-                        <span>Save:</span> <input type=" text" class="w-20"> <span>%</span> <button class="btn hover:bg-red-300 bg-teal-500">Save</button>
+                        <span>Save:</span> <input type=" text" class="w-20"> <span>%</span> <button onclick="presentElement(this)" class="btn hover:bg-red-300 bg-teal-500">Save</button>
                     </div>
-                    <h4 class="my-3">Saving Amount: 00</h4>
-                    <h4>Remaining balance: 00</h4>
+                    <h4 class="my-3">Saving Amount: <span id="saving-amount">00</span></h4>
+                    <h4>Remaining balance: <span id="remaining">00</span></h4>
                 </div>
 
             </div>
         </div>
     </section>
+    <script src="./index.js"></script>
 </body>
 
 </html>
